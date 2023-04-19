@@ -83,6 +83,7 @@
             Controls.Add(btnAgregar);
             Controls.Add(label1);
             Name = "Form1";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "frmAgenda";
             ResumeLayout(false);
             PerformLayout();

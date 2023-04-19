@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AgendaCuetillo;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +13,28 @@ namespace wea
 {
     public partial class frmMostrar : Form
     {
-        public frmMostrar()
+        private List<Contacto> contactos;
+
+        public frmMostrar(List<Contacto> cont)
         {
             InitializeComponent();
+            this.contactos = cont;
+            dgvContactos.AutoGenerateColumns = false;
+            dgvContactos.Columns.Add("Nombre", "Nombre");
+            dgvContactos.Columns.Add("Telefono", "Teléfono");
+            dgvContactos.Columns["Nombre"].DataPropertyName = "Nombre";
+            dgvContactos.Columns["Telefono"].DataPropertyName = "Telefono";
+
+            // Agregar los contactos al DataGridView
+            dgvContactos.DataSource = contactos;
         }
+
+
+        private void Salir_Click(object sender, EventArgs e)
+        {
+
+            this.Dispose();
+        }
+
     }
 }
