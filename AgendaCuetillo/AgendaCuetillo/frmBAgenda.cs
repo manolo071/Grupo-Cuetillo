@@ -24,7 +24,6 @@ namespace wea
         {
             frmMostrar Agregar = new frmMostrar(contactos);
             Agregar.ShowDialog();
-            this.Dispose();
         }
 
         private void btnSalir_Click(object sender, EventArgs e)

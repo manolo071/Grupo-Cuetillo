@@ -18,8 +18,6 @@ C:\Users\Andre\source\repos\AgendaCuetillo\AgendaCuetillo\obj\Debug\net6.0-windo
 C:\Users\Andre\source\repos\AgendaCuetillo\AgendaCuetillo\obj\Debug\net6.0-windows\AgendaCuetillo.genruntimeconfig.cache
 C:\Users\Andre\source\repos\AgendaCuetillo\AgendaCuetillo\obj\Debug\net6.0-windows\ref\AgendaCuetillo.dll
 C:\Users\Andre\Desktop\Grupo-Cuetillo\AgendaCuetillo\AgendaCuetillo\obj\Debug\net6.0-windows\AgendaCuetillo.csproj.AssemblyReference.cache
-C:\Users\Andre\Desktop\Grupo-Cuetillo\AgendaCuetillo\AgendaCuetillo\obj\Debug\net6.0-windows\AgendaCuetillo.Correcto.resources
-C:\Users\Andre\Desktop\Grupo-Cuetillo\AgendaCuetillo\AgendaCuetillo\obj\Debug\net6.0-windows\AgendaCuetillo.Error.resources
 C:\Users\Andre\Desktop\Grupo-Cuetillo\AgendaCuetillo\AgendaCuetillo\obj\Debug\net6.0-windows\wea.frmAgreCon.resources
 C:\Users\Andre\Desktop\Grupo-Cuetillo\AgendaCuetillo\AgendaCuetillo\obj\Debug\net6.0-windows\wea.Form1.resources
 C:\Users\Andre\Desktop\Grupo-Cuetillo\AgendaCuetillo\AgendaCuetillo\obj\Debug\net6.0-windows\wea.frmMostrar.resources
