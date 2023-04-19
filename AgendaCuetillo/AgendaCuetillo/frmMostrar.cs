@@ -32,7 +32,6 @@ namespace wea
 
         private void Salir_Click(object sender, EventArgs e)
         {
-
             this.Dispose();
         }
 

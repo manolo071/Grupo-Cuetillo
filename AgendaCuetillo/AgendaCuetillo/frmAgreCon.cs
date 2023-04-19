@@ -1,4 +1,5 @@
 ﻿using AgendaCuetillo;
+using System.Windows.Forms;
 
 namespace wea
 {
@@ -29,13 +30,12 @@ namespace wea
                 contactos.Add(nuevoContacto);
                 txtNombre.ResetText();
                 txtNumero.ResetText();
-                Correcto correcto = new Correcto();
-                correcto.ShowDialog();
+                MessageBox.Show("Se agrego correctamente","Felicidades");
+                this.Dispose();
             }
             catch (Exception ex)
             {
-                Error error = new Error();
-                error.ShowDialog();
+                MessageBox.Show("No se pudo agregar correctamente :c", "Error");
             }
         }
     }
