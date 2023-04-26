@@ -193,7 +193,7 @@
             // rbF
             // 
             rbF.AutoSize = true;
-            rbF.Location = new Point(159, 138);
+            rbF.Location = new Point(258, 140);
             rbF.Name = "rbF";
             rbF.Size = new Size(78, 19);
             rbF.TabIndex = 18;
@@ -205,7 +205,7 @@
             // rbM
             // 
             rbM.AutoSize = true;
-            rbM.Location = new Point(260, 138);
+            rbM.Location = new Point(157, 140);
             rbM.Name = "rbM";
             rbM.Size = new Size(80, 19);
             rbM.TabIndex = 19;

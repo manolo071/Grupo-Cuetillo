@@ -37,7 +37,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(53, 31);
+            label1.Location = new Point(27, 35);
             label1.Name = "label1";
             label1.Size = new Size(104, 15);
             label1.TabIndex = 1;
@@ -45,7 +45,7 @@
             // 
             // Salir
             // 
-            Salir.Location = new Point(139, 297);
+            Salir.Location = new Point(430, 307);
             Salir.Name = "Salir";
             Salir.Size = new Size(75, 23);
             Salir.TabIndex = 2;
@@ -56,23 +56,23 @@
             // dgvContactos
             // 
             dgvContactos.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvContactos.Location = new Point(41, 93);
+            dgvContactos.Location = new Point(12, 69);
             dgvContactos.Name = "dgvContactos";
             dgvContactos.RowTemplate.Height = 25;
-            dgvContactos.Size = new Size(260, 171);
+            dgvContactos.Size = new Size(932, 205);
             dgvContactos.TabIndex = 3;
             // 
             // frmMostrar
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(362, 342);
+            ClientSize = new Size(958, 342);
             Controls.Add(dgvContactos);
             Controls.Add(Salir);
             Controls.Add(label1);
             Name = "frmMostrar";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "frmMostrarCon";
+            Text = "Agenda";
             ((System.ComponentModel.ISupportInitialize)dgvContactos).EndInit();
             ResumeLayout(false);
             PerformLayout();

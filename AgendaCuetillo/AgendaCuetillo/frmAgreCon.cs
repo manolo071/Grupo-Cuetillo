@@ -28,14 +28,14 @@ namespace wea
                 string Nombre = txtNombre.Text;
                 string ApellPaterno = txtAP.Text;
                 string ApellMaterno = txtAM.Text;
-                char Genero = 'm';
+                char Genero = 'M';
                 if (rbF.IsDisposed)
                 {
-                    Genero = 'f';
+                    Genero = 'F';
                 }
                 if (rbM.IsDisposed)
                 {
-                    Genero = 'm';
+                    Genero = 'M';
                 }
                 int Telefono = int.Parse(txtTelefono.Text);
                 string Email = txtEmail.Text;
