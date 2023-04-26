@@ -31,17 +31,19 @@
             label1 = new Label();
             Salir = new Button();
             dgvContactos = new DataGridView();
+            cbFiltro = new ComboBox();
+            txtFiltro = new TextBox();
             ((System.ComponentModel.ISupportInitialize)dgvContactos).BeginInit();
             SuspendLayout();
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(27, 35);
+            label1.Location = new Point(23, 33);
             label1.Name = "label1";
-            label1.Size = new Size(104, 15);
+            label1.Size = new Size(56, 15);
             label1.TabIndex = 1;
-            label1.Text = "Lista de Contactos";
+            label1.Text = "Buscador";
             // 
             // Salir
             // 
@@ -59,14 +61,35 @@
             dgvContactos.Location = new Point(12, 69);
             dgvContactos.Name = "dgvContactos";
             dgvContactos.RowTemplate.Height = 25;
-            dgvContactos.Size = new Size(932, 205);
+            dgvContactos.Size = new Size(856, 205);
             dgvContactos.TabIndex = 3;
+            // 
+            // cbFiltro
+            // 
+            cbFiltro.DropDownStyle = ComboBoxStyle.DropDownList;
+            cbFiltro.FormattingEnabled = true;
+            cbFiltro.IntegralHeight = false;
+            cbFiltro.Items.AddRange(new object[] { "Nombre", "Ape Paterno", "Ape Materno", "Genero", "Telefono", "Email", "Direccion" });
+            cbFiltro.Location = new Point(126, 30);
+            cbFiltro.Name = "cbFiltro";
+            cbFiltro.Size = new Size(121, 23);
+            cbFiltro.TabIndex = 4;
+            // 
+            // txtFiltro
+            // 
+            txtFiltro.Location = new Point(287, 30);
+            txtFiltro.Name = "txtFiltro";
+            txtFiltro.Size = new Size(240, 23);
+            txtFiltro.TabIndex = 5;
+            txtFiltro.TextChanged += txtFiltro_TextChanged;
             // 
             // frmMostrar
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(958, 342);
+            ClientSize = new Size(891, 342);
+            Controls.Add(txtFiltro);
+            Controls.Add(cbFiltro);
             Controls.Add(dgvContactos);
             Controls.Add(Salir);
             Controls.Add(label1);
@@ -82,5 +105,7 @@
         private Label label1;
         private Button Salir;
         private DataGridView dgvContactos;
+        private ComboBox cbFiltro;
+        private TextBox txtFiltro;
     }
 }

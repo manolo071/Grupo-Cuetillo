@@ -20,6 +20,13 @@ namespace wea
         {
             InitializeComponent();
             this.contactos = cont;
+            cbFiltro.SelectedIndex = 0;
+            CargarContactos();
+            CargarDatos();
+        }
+
+        private void CargarContactos()
+        {
             dgvContactos.AutoGenerateColumns = false;
             dgvContactos.Columns.Add("Nombre", "Nombre");
             dgvContactos.Columns.Add("ApellPaterno", "ApellPaterno");
@@ -37,16 +44,82 @@ namespace wea
             dgvContactos.Columns["Email"].DataPropertyName = "Email";
             dgvContactos.Columns["Direccion"].DataPropertyName = "Direccion";
             dgvContactos.Columns["Nacimiento"].DataPropertyName = "Nacimiento";
-
-
-            // Agregar los contactos al DataGridView
-            dgvContactos.DataSource = contactos;
         }
-
-
         private void Salir_Click(object sender, EventArgs e)
         {
             this.Dispose();
+        }
+        private void CargarDatos()
+        {
+            dgvContactos.DataSource = contactos;
+        }
+        private void txtFiltro_TextChanged(object sender, EventArgs e)
+        {
+            int filtro = cbFiltro.SelectedIndex;
+            string a = txtFiltro.Text.ToUpper();
+            try
+            {
+                if (a != "")
+                {
+                    switch (filtro)
+                    {
+
+                        case 0:
+                            {
+                                List<Contacto> contactosFiltrados = contactos.Where(c => c.Nombre.Contains(a)).ToList();
+                                dgvContactos.DataSource = contactosFiltrados;
+                            }
+                            break;
+                        case 1:
+                            {
+                                List<Contacto> contactosFiltrados = contactos.Where(c => c.ApellPaterno.Contains(a)).ToList();
+                                dgvContactos.DataSource = contactosFiltrados;
+                            }
+                            break;
+                        case 2:
+                            {
+                                List<Contacto> contactosFiltrados = contactos.Where(c => c.ApellMaterno.Contains(a)).ToList();
+                                dgvContactos.DataSource = contactosFiltrados;
+                            }
+                            break;
+                        case 3:
+                            {
+                                List<Contacto> contactosFiltrados = contactos.Where(c => c.Genero == (a[0])).ToList();
+                                dgvContactos.DataSource = contactosFiltrados;
+                            }
+                            break;
+                        case 4:
+                            {
+
+                                List<Contacto> contactosFiltrados = contactos.Where(c => c.Telefono == int.Parse(a)).ToList();
+                                dgvContactos.DataSource = contactosFiltrados;
+                            }
+                            break;
+                        case 5:
+                            {
+                                List<Contacto> contactosFiltrados = contactos.Where(c => c.Email.Contains(a)).ToList();
+                                dgvContactos.DataSource = contactosFiltrados;
+                            }
+                            break;
+                        case 6:
+                            {
+                                List<Contacto> contactosFiltrados = contactos.Where(c => c.Direccion.Contains(a)).ToList();
+                                dgvContactos.DataSource = contactosFiltrados;
+                            }
+                            break;
+                    }
+                }
+                else
+                {
+                    CargarDatos();
+                }
+            }
+            catch (Exception ex) 
+            {
+                MessageBox.Show("No se pudo buscar correctamente :c", "Error");
+                CargarDatos();
+            }
+            
         }
     }
 }

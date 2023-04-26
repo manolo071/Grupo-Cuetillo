@@ -25,21 +25,21 @@ namespace wea
         {
             try
             {
-                string Nombre = txtNombre.Text;
-                string ApellPaterno = txtAP.Text;
-                string ApellMaterno = txtAM.Text;
+                string Nombre =  txtNombre.Text.ToUpper();
+                string ApellPaterno = txtAP.Text.ToUpper();
+                string ApellMaterno = txtAM.Text.ToUpper();
                 char Genero = 'M';
-                if (rbF.IsDisposed)
+                if (rbF.Checked)
                 {
                     Genero = 'F';
                 }
-                if (rbM.IsDisposed)
+                if (rbM.Checked)
                 {
                     Genero = 'M';
                 }
                 int Telefono = int.Parse(txtTelefono.Text);
-                string Email = txtEmail.Text;
-                string Direccion = txtDireccion.Text;
+                string Email = txtEmail.Text.ToUpper();
+                string Direccion = txtDireccion.Text.ToUpper();
                 DateTime Nacimiento = dtNacimiento.Value.Date;
 
                 Contacto nuevoContacto = new Contacto(Nombre, ApellPaterno, ApellMaterno, Genero, Telefono, Email, Direccion, Nacimiento);
