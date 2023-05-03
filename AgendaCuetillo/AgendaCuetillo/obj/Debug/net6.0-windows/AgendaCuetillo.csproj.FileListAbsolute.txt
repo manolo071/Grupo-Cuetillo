@@ -57,3 +57,15 @@ C:\Users\Andre\Desktop\Cuetillo\AgendaCuetillo\AgendaCuetillo\obj\Debug\net6.0-w
 C:\Users\Andre\Desktop\Cuetillo\AgendaCuetillo\AgendaCuetillo\obj\Debug\net6.0-windows\AgendaCuetillo.pdb
 C:\Users\Andre\Desktop\Cuetillo\AgendaCuetillo\AgendaCuetillo\obj\Debug\net6.0-windows\AgendaCuetillo.genruntimeconfig.cache
 C:\Users\Andre\Desktop\Cuetillo\AgendaCuetillo\AgendaCuetillo\obj\Debug\net6.0-windows\ref\AgendaCuetillo.dll
+C:\Users\Andre\Desktop\Agenda\AgendaCuetillo\AgendaCuetillo\obj\Debug\net6.0-windows\AgendaCuetillo.csproj.AssemblyReference.cache
+C:\Users\Andre\Desktop\Agenda\AgendaCuetillo\AgendaCuetillo\obj\Debug\net6.0-windows\wea.frmAgreCon.resources
+C:\Users\Andre\Desktop\Agenda\AgendaCuetillo\AgendaCuetillo\obj\Debug\net6.0-windows\wea.Form1.resources
+C:\Users\Andre\Desktop\Agenda\AgendaCuetillo\AgendaCuetillo\obj\Debug\net6.0-windows\wea.frmMostrar.resources
+C:\Users\Andre\Desktop\Agenda\AgendaCuetillo\AgendaCuetillo\obj\Debug\net6.0-windows\AgendaCuetillo.csproj.GenerateResource.cache
+C:\Users\Andre\Desktop\Agenda\AgendaCuetillo\AgendaCuetillo\obj\Debug\net6.0-windows\AgendaCuetillo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Andre\Desktop\Agenda\AgendaCuetillo\AgendaCuetillo\obj\Debug\net6.0-windows\AgendaCuetillo.AssemblyInfoInputs.cache
+C:\Users\Andre\Desktop\Agenda\AgendaCuetillo\AgendaCuetillo\obj\Debug\net6.0-windows\AgendaCuetillo.AssemblyInfo.cs
+C:\Users\Andre\Desktop\Agenda\AgendaCuetillo\AgendaCuetillo\obj\Debug\net6.0-windows\AgendaCuetillo.csproj.CoreCompileInputs.cache
+C:\Users\Andre\Desktop\Agenda\AgendaCuetillo\AgendaCuetillo\obj\Debug\net6.0-windows\AgendaCuetillo.dll
+C:\Users\Andre\Desktop\Agenda\AgendaCuetillo\AgendaCuetillo\obj\Debug\net6.0-windows\refint\AgendaCuetillo.dll
+C:\Users\Andre\Desktop\Agenda\AgendaCuetillo\AgendaCuetillo\obj\Debug\net6.0-windows\AgendaCuetillo.pdb

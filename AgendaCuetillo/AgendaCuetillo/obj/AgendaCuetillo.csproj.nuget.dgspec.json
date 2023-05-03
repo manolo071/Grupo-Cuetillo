@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Andre\\Desktop\\Cuetillo\\AgendaCuetillo\\AgendaCuetillo\\AgendaCuetillo.csproj": {}
+    "C:\\Users\\Andre\\Desktop\\Agenda\\AgendaCuetillo\\AgendaCuetillo\\AgendaCuetillo.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Andre\\Desktop\\Cuetillo\\AgendaCuetillo\\AgendaCuetillo\\AgendaCuetillo.csproj": {
+    "C:\\Users\\Andre\\Desktop\\Agenda\\AgendaCuetillo\\AgendaCuetillo\\AgendaCuetillo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Andre\\Desktop\\Cuetillo\\AgendaCuetillo\\AgendaCuetillo\\AgendaCuetillo.csproj",
+        "projectUniqueName": "C:\\Users\\Andre\\Desktop\\Agenda\\AgendaCuetillo\\AgendaCuetillo\\AgendaCuetillo.csproj",
         "projectName": "AgendaCuetillo",
-        "projectPath": "C:\\Users\\Andre\\Desktop\\Cuetillo\\AgendaCuetillo\\AgendaCuetillo\\AgendaCuetillo.csproj",
+        "projectPath": "C:\\Users\\Andre\\Desktop\\Agenda\\AgendaCuetillo\\AgendaCuetillo\\AgendaCuetillo.csproj",
         "packagesPath": "C:\\Users\\Andre\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Andre\\Desktop\\Cuetillo\\AgendaCuetillo\\AgendaCuetillo\\obj\\",
+        "outputPath": "C:\\Users\\Andre\\Desktop\\Agenda\\AgendaCuetillo\\AgendaCuetillo\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Andre\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -37,6 +37,12 @@
       "frameworks": {
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
+          "dependencies": {
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.5, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
