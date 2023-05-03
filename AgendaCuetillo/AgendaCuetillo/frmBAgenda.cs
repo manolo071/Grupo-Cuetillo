@@ -15,9 +15,9 @@ namespace wea
         private void btnAgregar_Click(object sender, EventArgs e)
         {
             frmAgreCon Agregar = new frmAgreCon(contactos);
-            
+
             Agregar.ShowDialog();
-            
+
         }
 
         private void btnMostrar_Click(object sender, EventArgs e)
@@ -29,6 +29,12 @@ namespace wea
         private void btnSalir_Click(object sender, EventArgs e)
         {
             this.Dispose();
+        }
+
+        private void btnConectar_Click(object sender, EventArgs e)
+        {
+            cConexion objeto = new cConexion();
+            objeto.conexionBD();
         }
     }
 }

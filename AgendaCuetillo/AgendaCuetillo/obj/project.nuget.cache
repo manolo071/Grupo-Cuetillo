@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "MfwKw88RBfvvT10Tof1aH+Bgq3DNpFY/n367On+H+B4k8OkRjHnVbRDZuuR61S74ssC52/claeNYVgL5KX2PuQ==",
+  "dgSpecHash": "GzSIgrLX8G1LiOHzUdC1PaEy8BrpYvsPoG9xQTmIEHDXXE7bijFNZvGRfaEaOGmVk9UNUaOckIaV3NPG6R5emQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Andre\\Desktop\\Agenda\\AgendaCuetillo\\AgendaCuetillo\\AgendaCuetillo.csproj",
   "expectedPackageFiles": [
@@ -10,8 +10,12 @@
     "C:\\Users\\Andre\\.nuget\\packages\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
     "C:\\Users\\Andre\\.nuget\\packages\\runtime.win-x64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
     "C:\\Users\\Andre\\.nuget\\packages\\runtime.win-x86.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x86.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
+    "C:\\Users\\Andre\\.nuget\\packages\\system.configuration.configurationmanager\\8.0.0-preview.3.23174.8\\system.configuration.configurationmanager.8.0.0-preview.3.23174.8.nupkg.sha512",
+    "C:\\Users\\Andre\\.nuget\\packages\\system.data.oledb\\8.0.0-preview.3.23174.8\\system.data.oledb.8.0.0-preview.3.23174.8.nupkg.sha512",
     "C:\\Users\\Andre\\.nuget\\packages\\system.data.sqlclient\\4.8.5\\system.data.sqlclient.4.8.5.nupkg.sha512",
+    "C:\\Users\\Andre\\.nuget\\packages\\system.diagnostics.performancecounter\\8.0.0-preview.3.23174.8\\system.diagnostics.performancecounter.8.0.0-preview.3.23174.8.nupkg.sha512",
     "C:\\Users\\Andre\\.nuget\\packages\\system.security.accesscontrol\\4.7.0\\system.security.accesscontrol.4.7.0.nupkg.sha512",
+    "C:\\Users\\Andre\\.nuget\\packages\\system.security.cryptography.protecteddata\\8.0.0-preview.3.23174.8\\system.security.cryptography.protecteddata.8.0.0-preview.3.23174.8.nupkg.sha512",
     "C:\\Users\\Andre\\.nuget\\packages\\system.security.principal.windows\\4.7.0\\system.security.principal.windows.4.7.0.nupkg.sha512"
   ],
   "logs": []

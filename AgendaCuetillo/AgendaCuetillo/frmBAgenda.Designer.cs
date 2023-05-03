@@ -32,6 +32,7 @@
             btnAgregar = new Button();
             btnMostrar = new Button();
             btnSalir = new Button();
+            btnConectar = new Button();
             SuspendLayout();
             // 
             // label1
@@ -73,11 +74,22 @@
             btnSalir.UseVisualStyleBackColor = true;
             btnSalir.Click += btnSalir_Click;
             // 
+            // btnConectar
+            // 
+            btnConectar.Location = new Point(74, 242);
+            btnConectar.Name = "btnConectar";
+            btnConectar.Size = new Size(132, 23);
+            btnConectar.TabIndex = 4;
+            btnConectar.Text = "Conectar DB";
+            btnConectar.UseVisualStyleBackColor = true;
+            btnConectar.Click += btnConectar_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(285, 291);
+            Controls.Add(btnConectar);
             Controls.Add(btnSalir);
             Controls.Add(btnMostrar);
             Controls.Add(btnAgregar);
@@ -95,5 +107,6 @@
         private Button btnAgregar;
         private Button btnMostrar;
         private Button btnSalir;
+        private Button btnConectar;
     }
 }
