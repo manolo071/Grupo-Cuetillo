@@ -33,6 +33,7 @@
             dgvContactos = new DataGridView();
             cbFiltro = new ComboBox();
             txtFiltro = new TextBox();
+            btnLimpiar = new Button();
             ((System.ComponentModel.ISupportInitialize)dgvContactos).BeginInit();
             SuspendLayout();
             // 
@@ -84,11 +85,22 @@
             txtFiltro.TabIndex = 5;
             txtFiltro.TextChanged += txtFiltro_TextChanged;
             // 
+            // btnLimpiar
+            // 
+            btnLimpiar.Location = new Point(552, 33);
+            btnLimpiar.Name = "btnLimpiar";
+            btnLimpiar.Size = new Size(75, 23);
+            btnLimpiar.TabIndex = 6;
+            btnLimpiar.Text = "Limpiar";
+            btnLimpiar.UseVisualStyleBackColor = true;
+            btnLimpiar.Click += btnLimpiar_Click;
+            // 
             // frmMostrar
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(962, 342);
+            Controls.Add(btnLimpiar);
             Controls.Add(txtFiltro);
             Controls.Add(cbFiltro);
             Controls.Add(dgvContactos);
@@ -108,5 +120,6 @@
         private DataGridView dgvContactos;
         private ComboBox cbFiltro;
         private TextBox txtFiltro;
+        private Button btnLimpiar;
     }
 }

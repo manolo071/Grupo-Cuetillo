@@ -143,6 +143,13 @@ namespace wea
         private void cbFiltro_SelectedIndexChanged(object sender, EventArgs e)
         {
             txtFiltro.ResetText();
+            txtFiltro.Focus();
+        }
+
+        private void btnLimpiar_Click(object sender, EventArgs e)
+        {
+            txtFiltro.ResetText();
+            txtFiltro.Focus();
         }
     }
 }

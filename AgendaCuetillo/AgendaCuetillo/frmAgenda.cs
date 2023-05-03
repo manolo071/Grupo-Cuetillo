@@ -30,11 +30,5 @@ namespace wea
         {
             this.Dispose();
         }
-
-        private void btnConectar_Click(object sender, EventArgs e)
-        {
-            cConexion objeto = new cConexion();
-            objeto.conexionBD();
-        }
     }
 }
