@@ -5,10 +5,10 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 
 namespace wea
 {
-    public partial class frmAgreCon : Form
+    public partial class frmAgregar : Form
     {
-        public List<Contacto> contactos;
-        public frmAgreCon(List<Contacto> contactos)
+        public List<cContacto> contactos;
+        public frmAgregar(List<cContacto> contactos)
         {
             InitializeComponent();
             this.contactos = contactos;
@@ -44,7 +44,7 @@ namespace wea
                 string Direccion = txtDireccion.Text.ToUpper();
                 DateTime Nacimiento = dtNacimiento.Value.Date;
 
-                Contacto nuevoContacto = new Contacto(DNI, Nombre, ApellPaterno, ApellMaterno, Genero, Telefono, Email, Direccion, Nacimiento);
+                cContacto nuevoContacto = new cContacto(DNI, Nombre, ApellPaterno, ApellMaterno, Genero, Telefono, Email, Direccion, Nacimiento);
                 contactos.Add(nuevoContacto);
                 cConexion conex = new cConexion();
                 conex.IngresarDatos(nuevoContacto);

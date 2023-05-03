@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AgendaCuetillo
 {
-    public class Contacto
+    public class cContacto
     {
         public int DNI { get; set; }
         public string Nombre { get; set; }
@@ -18,7 +18,7 @@ namespace AgendaCuetillo
         public string Direccion { get; set; }
         public DateTime Nacimiento { get; set; }
 
-        public Contacto(int dni,string nombre, string paterno, string materno, char genero, int telefono, string email, string direccion, DateTime nacimiento)
+        public cContacto(int dni,string nombre, string paterno, string materno, char genero, int telefono, string email, string direccion, DateTime nacimiento)
         {
             DNI = dni;
             Nombre = nombre;

@@ -6,7 +6,7 @@ namespace wea
 
     public partial class Form1 : Form
     {
-        private List<Contacto> contactos = new List<Contacto>();
+        private List<cContacto> contactos = new List<cContacto>();
         public Form1()
         {
             InitializeComponent();
@@ -14,7 +14,7 @@ namespace wea
 
         private void btnAgregar_Click(object sender, EventArgs e)
         {
-            frmAgreCon Agregar = new frmAgreCon(contactos);
+            frmAgregar Agregar = new frmAgregar(contactos);
 
             Agregar.ShowDialog();
 

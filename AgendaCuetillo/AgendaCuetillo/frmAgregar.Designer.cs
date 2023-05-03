@@ -1,6 +1,6 @@
 ﻿namespace wea
 {
-    partial class frmAgreCon
+    partial class frmAgregar
     {
         /// <summary>
         /// Required designer variable.

@@ -6,43 +6,43 @@ using System.Threading.Tasks;
 using System.Data.SqlClient;
 using System.Data.OleDb;
 using System.Diagnostics.Contracts;
+using System.Data;
+using System.Windows.Forms;
 
 namespace AgendaCuetillo
 {
     public class cConexion
     {
-        SqlConnection conex = new SqlConnection();      
-        static string servidor = "localhost";
-        static string DB = "DBAgenda";
-        static string user = "Agenda";
-        static string password = "726965602016";
-        static string puerto = "1433";
+        //SqlConnection conex = new SqlConnection();      
+        //static string servidor = "localhost";
+        //static string DB = "DBAgenda";
+        //static string user = "Agenda";
+        //static string password = "726965602016";
+        //static string puerto = "1433";
 
-        string cadenaConexion = "Data source=" + servidor + "," + puerto + ";" + "user id=" + user + ";" + "password=" + password + ";" + "Initial Catalog=" + DB + ";" + "Persist Security Info=true";
+        //string cadenaConexion = "Data source=" + servidor + "," + puerto + ";" + "user id=" + user + ";" + "password=" + password + ";" + "Initial Catalog=" + DB + ";" + "Persist Security Info=true";
 
         protected OleDbConnection conexion = new OleDbConnection(@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=DBAgenda.accdb");
 
-        public SqlConnection establecerconexion()
-        {
-            try
-            {
-                conex.ConnectionString = cadenaConexion;
-                conex.Open();
-                MessageBox.Show("Si se logro conectar a la DB");
-            }
-            catch (SqlException e)
-            {
-                MessageBox.Show("No se logro conectar a la DB");
-            }
-            return conex;
-        }
+        //public SqlConnection establecerconexion()
+        //{
+        //    try
+        //    {
+        //        conex.ConnectionString = cadenaConexion;
+        //        conex.Open();
+        //    }
+        //    catch (SqlException e)
+        //    {
+        //        MessageBox.Show("No se logro conectar a la DB");
+        //    }
+        //    return conex;
+        //}
 
         public OleDbConnection conexionBD()
         {
             try
             {               
                 conexion.Open();
-                MessageBox.Show("Si se logro conectar a la DB");
                 
             }
             catch (SqlException e)
@@ -52,11 +52,25 @@ namespace AgendaCuetillo
             return conexion;
         }
 
-        public OleDbConnection IngresarDatos(Contacto contacto)
+        public OleDbConnection close()
         {
             try
             {
-                conexion.Open();
+                conexion.Close();
+
+            }
+            catch (SqlException e)
+            {
+                MessageBox.Show("No se logro cerrar la conexion");
+            }
+            return conexion;
+        }
+
+        public OleDbConnection IngresarDatos(cContacto contacto)
+        {
+            try
+            {
+                conexionBD();
                 string query = "INSERT INTO TContactos (DNI, Nombre, ApellidoPaterno, ApellidoMaterno, Genero, Telefono, Email, Direccion, Nacimiento) VALUES (@dni, @nombre, @paterno, @materno, @genero, @telefono, @email, @direccion, @nacimiento)";
                 OleDbCommand command = new OleDbCommand(query, conexion);
                 command.Parameters.AddWithValue("@dni", contacto.DNI);
@@ -70,8 +84,8 @@ namespace AgendaCuetillo
                 command.Parameters.AddWithValue("@nacimiento", contacto.Nacimiento);
 
                 command.ExecuteNonQuery();
-                conexion.Close();
-                MessageBox.Show("Si se logro ingresar contacto a la DB");
+                close();
+
             }
             catch (SqlException e)
             {
@@ -81,6 +95,34 @@ namespace AgendaCuetillo
             return conexion;
         }
 
+        public OleDbDataReader RecuperarDatos(int f, string Colum, string para)
+        {
+            OleDbDataReader reader;
+            try
+            {
+                conexionBD();
+                string query = "SELECT * FROM TContactos";
+                if(f == 1)
+                {
+                    query += " WHERE  " + Colum + " LIKE '" + para + "%';";
+                }
+                else
+                {
+                    query += ";";
+                }
+                OleDbCommand command = new OleDbCommand(query, conexion);
+                reader = command.ExecuteReader();                  
+                return reader;                
+            }
+            catch (SqlException e)
+            {
+                MessageBox.Show("No se logro ingresar contacto a la DB");
+                return null;
+
+            }
+            close();
+
+        }
     }
 }
 

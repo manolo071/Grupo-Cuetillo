@@ -61,7 +61,7 @@
             dgvContactos.Location = new Point(12, 69);
             dgvContactos.Name = "dgvContactos";
             dgvContactos.RowTemplate.Height = 25;
-            dgvContactos.Size = new Size(856, 205);
+            dgvContactos.Size = new Size(938, 205);
             dgvContactos.TabIndex = 3;
             // 
             // cbFiltro
@@ -69,11 +69,12 @@
             cbFiltro.DropDownStyle = ComboBoxStyle.DropDownList;
             cbFiltro.FormattingEnabled = true;
             cbFiltro.IntegralHeight = false;
-            cbFiltro.Items.AddRange(new object[] { "Nombre", "Ape Paterno", "Ape Materno", "Genero", "Telefono", "Email", "Direccion" });
+            cbFiltro.Items.AddRange(new object[] { "DNI", "Nombre", "Ape Paterno", "Ape Materno", "Genero", "Telefono", "Email", "Direccion" });
             cbFiltro.Location = new Point(126, 30);
             cbFiltro.Name = "cbFiltro";
             cbFiltro.Size = new Size(121, 23);
             cbFiltro.TabIndex = 4;
+            cbFiltro.SelectedIndexChanged += cbFiltro_SelectedIndexChanged;
             // 
             // txtFiltro
             // 
@@ -87,7 +88,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(891, 342);
+            ClientSize = new Size(962, 342);
             Controls.Add(txtFiltro);
             Controls.Add(cbFiltro);
             Controls.Add(dgvContactos);

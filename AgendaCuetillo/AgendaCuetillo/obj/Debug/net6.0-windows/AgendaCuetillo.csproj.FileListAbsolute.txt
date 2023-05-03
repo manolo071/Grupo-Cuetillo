@@ -75,8 +75,8 @@ C:\Users\Andre\Desktop\Agenda\AgendaCuetillo\AgendaCuetillo\bin\Debug\net6.0-win
 C:\Users\Andre\Desktop\Agenda\AgendaCuetillo\AgendaCuetillo\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
 C:\Users\Andre\Desktop\Agenda\AgendaCuetillo\AgendaCuetillo\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\System.Diagnostics.PerformanceCounter.dll
 C:\Users\Andre\Desktop\Agenda\AgendaCuetillo\AgendaCuetillo\obj\Debug\net6.0-windows\AgendaCuetillo.csproj.AssemblyReference.cache
-C:\Users\Andre\Desktop\Agenda\AgendaCuetillo\AgendaCuetillo\obj\Debug\net6.0-windows\wea.frmAgreCon.resources
 C:\Users\Andre\Desktop\Agenda\AgendaCuetillo\AgendaCuetillo\obj\Debug\net6.0-windows\wea.Form1.resources
+C:\Users\Andre\Desktop\Agenda\AgendaCuetillo\AgendaCuetillo\obj\Debug\net6.0-windows\wea.frmAgregar.resources
 C:\Users\Andre\Desktop\Agenda\AgendaCuetillo\AgendaCuetillo\obj\Debug\net6.0-windows\wea.frmMostrar.resources
 C:\Users\Andre\Desktop\Agenda\AgendaCuetillo\AgendaCuetillo\obj\Debug\net6.0-windows\AgendaCuetillo.csproj.GenerateResource.cache
 C:\Users\Andre\Desktop\Agenda\AgendaCuetillo\AgendaCuetillo\obj\Debug\net6.0-windows\AgendaCuetillo.GeneratedMSBuildEditorConfig.editorconfig
