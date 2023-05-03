@@ -47,12 +47,14 @@
             dtNacimiento = new DateTimePicker();
             rbF = new RadioButton();
             rbM = new RadioButton();
+            txtDNI = new TextBox();
+            label10 = new Label();
             SuspendLayout();
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(12, 24);
+            label1.Location = new Point(15, 51);
             label1.Name = "label1";
             label1.Size = new Size(54, 15);
             label1.TabIndex = 0;
@@ -60,21 +62,21 @@
             // 
             // txtNombre
             // 
-            txtNombre.Location = new Point(157, 21);
+            txtNombre.Location = new Point(160, 48);
             txtNombre.Name = "txtNombre";
             txtNombre.Size = new Size(197, 23);
             txtNombre.TabIndex = 1;
             // 
             // txtTelefono
             // 
-            txtTelefono.Location = new Point(157, 167);
+            txtTelefono.Location = new Point(160, 194);
             txtTelefono.Name = "txtTelefono";
             txtTelefono.Size = new Size(197, 23);
             txtTelefono.TabIndex = 3;
             // 
             // btnAgregar
             // 
-            btnAgregar.Location = new Point(72, 339);
+            btnAgregar.Location = new Point(75, 366);
             btnAgregar.Name = "btnAgregar";
             btnAgregar.Size = new Size(75, 23);
             btnAgregar.TabIndex = 4;
@@ -84,7 +86,7 @@
             // 
             // btnCancelar
             // 
-            btnCancelar.Location = new Point(221, 339);
+            btnCancelar.Location = new Point(224, 366);
             btnCancelar.Name = "btnCancelar";
             btnCancelar.Size = new Size(75, 23);
             btnCancelar.TabIndex = 5;
@@ -95,7 +97,7 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(12, 61);
+            label3.Location = new Point(15, 88);
             label3.Name = "label3";
             label3.Size = new Size(98, 15);
             label3.TabIndex = 6;
@@ -104,7 +106,7 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(12, 97);
+            label4.Location = new Point(15, 124);
             label4.Name = "label4";
             label4.Size = new Size(102, 15);
             label4.TabIndex = 7;
@@ -113,7 +115,7 @@
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(12, 132);
+            label5.Location = new Point(15, 159);
             label5.Name = "label5";
             label5.Size = new Size(48, 15);
             label5.TabIndex = 8;
@@ -122,7 +124,7 @@
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(12, 167);
+            label6.Location = new Point(15, 194);
             label6.Name = "label6";
             label6.Size = new Size(55, 15);
             label6.TabIndex = 9;
@@ -131,7 +133,7 @@
             // label7
             // 
             label7.AutoSize = true;
-            label7.Location = new Point(16, 206);
+            label7.Location = new Point(19, 233);
             label7.Name = "label7";
             label7.Size = new Size(44, 15);
             label7.TabIndex = 10;
@@ -140,7 +142,7 @@
             // label8
             // 
             label8.AutoSize = true;
-            label8.Location = new Point(16, 242);
+            label8.Location = new Point(19, 269);
             label8.Name = "label8";
             label8.Size = new Size(60, 15);
             label8.TabIndex = 11;
@@ -149,7 +151,7 @@
             // label9
             // 
             label9.AutoSize = true;
-            label9.Location = new Point(16, 283);
+            label9.Location = new Point(19, 310);
             label9.Name = "label9";
             label9.Size = new Size(72, 15);
             label9.TabIndex = 12;
@@ -157,35 +159,35 @@
             // 
             // txtAP
             // 
-            txtAP.Location = new Point(157, 61);
+            txtAP.Location = new Point(160, 88);
             txtAP.Name = "txtAP";
             txtAP.Size = new Size(197, 23);
             txtAP.TabIndex = 13;
             // 
             // txtAM
             // 
-            txtAM.Location = new Point(157, 97);
+            txtAM.Location = new Point(160, 124);
             txtAM.Name = "txtAM";
             txtAM.Size = new Size(197, 23);
             txtAM.TabIndex = 14;
             // 
             // txtEmail
             // 
-            txtEmail.Location = new Point(157, 206);
+            txtEmail.Location = new Point(160, 233);
             txtEmail.Name = "txtEmail";
             txtEmail.Size = new Size(197, 23);
             txtEmail.TabIndex = 15;
             // 
             // txtDireccion
             // 
-            txtDireccion.Location = new Point(157, 242);
+            txtDireccion.Location = new Point(160, 269);
             txtDireccion.Name = "txtDireccion";
             txtDireccion.Size = new Size(197, 23);
             txtDireccion.TabIndex = 16;
             // 
             // dtNacimiento
             // 
-            dtNacimiento.Location = new Point(157, 283);
+            dtNacimiento.Location = new Point(160, 310);
             dtNacimiento.Name = "dtNacimiento";
             dtNacimiento.Size = new Size(200, 23);
             dtNacimiento.TabIndex = 17;
@@ -193,7 +195,7 @@
             // rbF
             // 
             rbF.AutoSize = true;
-            rbF.Location = new Point(258, 140);
+            rbF.Location = new Point(261, 167);
             rbF.Name = "rbF";
             rbF.Size = new Size(78, 19);
             rbF.TabIndex = 18;
@@ -205,7 +207,7 @@
             // rbM
             // 
             rbM.AutoSize = true;
-            rbM.Location = new Point(157, 140);
+            rbM.Location = new Point(160, 167);
             rbM.Name = "rbM";
             rbM.Size = new Size(80, 19);
             rbM.TabIndex = 19;
@@ -214,11 +216,29 @@
             rbM.Text = "Masculino";
             rbM.UseVisualStyleBackColor = true;
             // 
+            // txtDNI
+            // 
+            txtDNI.Location = new Point(160, 14);
+            txtDNI.Name = "txtDNI";
+            txtDNI.Size = new Size(197, 23);
+            txtDNI.TabIndex = 21;
+            // 
+            // label10
+            // 
+            label10.AutoSize = true;
+            label10.Location = new Point(16, 17);
+            label10.Name = "label10";
+            label10.Size = new Size(30, 15);
+            label10.TabIndex = 20;
+            label10.Text = "DNI:";
+            // 
             // frmAgreCon
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(380, 397);
+            Controls.Add(txtDNI);
+            Controls.Add(label10);
             Controls.Add(rbM);
             Controls.Add(rbF);
             Controls.Add(dtNacimiento);
@@ -268,5 +288,7 @@
         private DateTimePicker dtNacimiento;
         private RadioButton rbF;
         private RadioButton rbM;
+        private TextBox txtDNI;
+        private Label label10;
     }
 }

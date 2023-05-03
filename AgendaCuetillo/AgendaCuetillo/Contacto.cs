@@ -8,6 +8,7 @@ namespace AgendaCuetillo
 {
     public class Contacto
     {
+        public int DNI { get; set; }
         public string Nombre { get; set; }
         public string ApellPaterno { get; set; }
         public string ApellMaterno { get; set; }
@@ -17,8 +18,9 @@ namespace AgendaCuetillo
         public string Direccion { get; set; }
         public DateTime Nacimiento { get; set; }
 
-        public Contacto(string nombre, string paterno, string materno, char genero, int telefono, string email, string direccion, DateTime nacimiento)
-        {            
+        public Contacto(int dni,string nombre, string paterno, string materno, char genero, int telefono, string email, string direccion, DateTime nacimiento)
+        {
+            DNI = dni;
             Nombre = nombre;
             ApellPaterno = paterno;
             ApellMaterno = materno;

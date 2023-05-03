@@ -1,4 +1,5 @@
 ﻿using AgendaCuetillo;
+using System;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 
@@ -25,7 +26,8 @@ namespace wea
         {
             try
             {
-                string Nombre =  txtNombre.Text.ToUpper();
+                int DNI = int.Parse(txtDNI.Text);
+                string Nombre = txtNombre.Text.ToUpper();
                 string ApellPaterno = txtAP.Text.ToUpper();
                 string ApellMaterno = txtAM.Text.ToUpper();
                 char Genero = 'M';
@@ -42,15 +44,17 @@ namespace wea
                 string Direccion = txtDireccion.Text.ToUpper();
                 DateTime Nacimiento = dtNacimiento.Value.Date;
 
-                Contacto nuevoContacto = new Contacto(Nombre, ApellPaterno, ApellMaterno, Genero, Telefono, Email, Direccion, Nacimiento);
+                Contacto nuevoContacto = new Contacto(DNI, Nombre, ApellPaterno, ApellMaterno, Genero, Telefono, Email, Direccion, Nacimiento);
                 contactos.Add(nuevoContacto);
-                txtNombre.ResetText();
-                txtTelefono.ResetText();
+                cConexion conex = new cConexion();
+                conex.IngresarDatos(nuevoContacto);
                 MessageBox.Show("Se agrego correctamente", "Felicidades");
+
                 this.Dispose();
             }
             catch (Exception ex)
             {
+                MessageBox.Show(ex.ToString(), "Error");
                 MessageBox.Show("No se pudo agregar correctamente :c", "Error");
             }
         }
