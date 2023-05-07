@@ -43,9 +43,9 @@ namespace AgendaCuetillo
                         // Enlazar los datos al DataGridView
                         if (lector.HasRows)
                         {
-                            frmAgenda agenda = new frmAgenda();
+                            frmAgenda agenda = new frmAgenda(User);
                             agenda.Show();
-                            this.Hide();
+                            Hide();
                         }
                         else
                         {
@@ -63,7 +63,7 @@ namespace AgendaCuetillo
 
         private void btnSalir_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Close();
         }
     }
 }

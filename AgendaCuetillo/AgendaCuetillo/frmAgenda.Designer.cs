@@ -36,6 +36,7 @@
             acercaDeToolStripMenuItem = new ToolStripMenuItem();
             acercaDeAgendaCuetilloToolStripMenuItem = new ToolStripMenuItem();
             pictureBox1 = new PictureBox();
+            lblBienvenida = new Label();
             menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
@@ -95,24 +96,35 @@
             // pictureBox1
             // 
             pictureBox1.Image = AgendaCuetillo.Properties.Resources._1802667;
-            pictureBox1.Location = new Point(12, 27);
+            pictureBox1.Location = new Point(12, 54);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(276, 264);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 5;
             pictureBox1.TabStop = false;
             // 
-            // Form1
+            // lblBienvenida
+            // 
+            lblBienvenida.AutoSize = true;
+            lblBienvenida.Location = new Point(112, 30);
+            lblBienvenida.Name = "lblBienvenida";
+            lblBienvenida.Size = new Size(66, 15);
+            lblBienvenida.TabIndex = 6;
+            lblBienvenida.Text = "Bienvenido";
+            // 
+            // frmAgenda
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(300, 303);
+            ClientSize = new Size(300, 330);
+            Controls.Add(lblBienvenida);
             Controls.Add(pictureBox1);
             Controls.Add(menuStrip1);
             MainMenuStrip = menuStrip1;
-            Name = "Form1";
+            Name = "frmAgenda";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Agenda Cuetillo 1.0";
+            FormClosing += frmAgenda_FormClosing;
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
@@ -129,5 +141,6 @@
         private ToolStripMenuItem acercaDeToolStripMenuItem;
         private ToolStripMenuItem acercaDeAgendaCuetilloToolStripMenuItem;
         private PictureBox pictureBox1;
+        private Label lblBienvenida;
     }
 }

@@ -7,21 +7,22 @@ namespace wea
     public partial class frmAgenda : Form
     {
         private List<cContacto> contactos = new List<cContacto>();
-        public frmAgenda()
+        public frmAgenda(string User)
         {
             InitializeComponent();
+            lblBienvenida.Text += " " + User;
         }
         private void agregarContactoToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmAgregar Agregar = new frmAgregar(contactos);
 
-            Agregar.ShowDialog();
+            Agregar.Show();
         }
 
         private void mostrarContactoToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmMostrar Agregar = new frmMostrar(contactos);
-            Agregar.ShowDialog();
+            Agregar.Show();
         }
 
         private void acercaDeAgendaCuetilloToolStripMenuItem_Click(object sender, EventArgs e)
@@ -31,7 +32,17 @@ namespace wea
 
         private void salirToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            this.Dispose();
+            cerrar();
+        }
+
+        private void frmAgenda_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            cerrar();
+        }
+
+        private void cerrar()
+        {
+            Environment.Exit(1);
         }
     }
 }
