@@ -154,5 +154,14 @@ namespace wea
             txtFiltro.ResetText();
             txtFiltro.Focus();
         }
+
+        private void txtFiltro_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            int filtro = cbFiltro.SelectedIndex;
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && (filtro == 0 || filtro == 5))
+            {
+                e.Handled = true;
+            }
+        }
     }
 }

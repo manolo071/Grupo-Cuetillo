@@ -74,6 +74,7 @@
             txtTelefono.Name = "txtTelefono";
             txtTelefono.Size = new Size(197, 23);
             txtTelefono.TabIndex = 6;
+            txtTelefono.KeyPress += txtTelefono_KeyPress;
             // 
             // btnAgregar
             // 
@@ -223,6 +224,7 @@
             txtDNI.Name = "txtDNI";
             txtDNI.Size = new Size(197, 23);
             txtDNI.TabIndex = 0;
+            txtDNI.KeyPress += txtDNI_KeyPress;
             // 
             // label10
             // 

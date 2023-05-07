@@ -75,6 +75,7 @@
             txtDNI.Name = "txtDNI";
             txtDNI.Size = new Size(197, 23);
             txtDNI.TabIndex = 43;
+            txtDNI.KeyPress += txtDNI_KeyPress;
             // 
             // label10
             // 
@@ -242,6 +243,7 @@
             txtTelefono.Name = "txtTelefono";
             txtTelefono.Size = new Size(197, 23);
             txtTelefono.TabIndex = 25;
+            txtTelefono.KeyPress += txtTelefono_KeyPress;
             // 
             // txtNombre
             // 
@@ -273,7 +275,6 @@
             dgvContactos.Size = new Size(772, 356);
             dgvContactos.TabIndex = 45;
             dgvContactos.SelectionChanged += dgvContactos_SelectionChanged;
-            dgvContactos.TabIndexChanged += dgvContactos_TabIndexChanged;
             // 
             // btnCancelar
             // 

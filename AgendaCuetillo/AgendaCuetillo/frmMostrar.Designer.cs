@@ -87,6 +87,7 @@
             txtFiltro.Size = new Size(240, 23);
             txtFiltro.TabIndex = 5;
             txtFiltro.TextChanged += txtFiltro_TextChanged;
+            txtFiltro.KeyPress += txtFiltro_KeyPress;
             // 
             // btnLimpiar
             // 
