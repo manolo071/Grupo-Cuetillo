@@ -16,20 +16,6 @@ namespace wea
         }
 
 
-        private void btnSalir_Click(object sender, EventArgs e)
-        {
-            if (verificar())
-            {
-                if (MessageBox.Show("Los datos de su nuevo contacto se perderan, esta seguro que desea salir?", "Advertencia", MessageBoxButtons.YesNo) == DialogResult.Yes)
-                {
-                    Close();
-                }
-            }
-            else
-            {
-                Close();
-            }
-        }
 
 
         private void btnAgregar_Click(object sender, EventArgs e)
@@ -55,7 +41,7 @@ namespace wea
                 DateTime Nacimiento = dtNacimiento.Value.Date;
 
                 cContacto nuevoContacto = new cContacto(DNI, Nombre, ApellPaterno, ApellMaterno, Genero, Telefono, Email, Direccion, Nacimiento);
-                contactos.Add(nuevoContacto);
+                //contactos.Add(nuevoContacto);
                 cConexion conex = new cConexion();
                 conex.IngresarDatos(nuevoContacto);
                 MessageBox.Show("Se agrego correctamente", "Felicidades");
@@ -64,7 +50,6 @@ namespace wea
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.ToString(), "Error");
                 MessageBox.Show("No se pudo agregar correctamente :c", "Error");
             }
         }
@@ -106,6 +91,11 @@ namespace wea
             txtEmail.ResetText();
             txtDireccion.ResetText();
             txtDNI.Focus();
-        }        
+        }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }

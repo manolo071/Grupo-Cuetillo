@@ -73,14 +73,14 @@
             txtTelefono.Location = new Point(160, 194);
             txtTelefono.Name = "txtTelefono";
             txtTelefono.Size = new Size(197, 23);
-            txtTelefono.TabIndex = 3;
+            txtTelefono.TabIndex = 6;
             // 
             // btnAgregar
             // 
             btnAgregar.Location = new Point(65, 366);
             btnAgregar.Name = "btnAgregar";
             btnAgregar.Size = new Size(75, 23);
-            btnAgregar.TabIndex = 4;
+            btnAgregar.TabIndex = 10;
             btnAgregar.Text = "Agregar";
             btnAgregar.UseVisualStyleBackColor = true;
             btnAgregar.Click += btnAgregar_Click;
@@ -90,7 +90,7 @@
             btnSalir.Location = new Point(247, 366);
             btnSalir.Name = "btnSalir";
             btnSalir.Size = new Size(75, 23);
-            btnSalir.TabIndex = 5;
+            btnSalir.TabIndex = 12;
             btnSalir.Text = "Salir";
             btnSalir.UseVisualStyleBackColor = true;
             btnSalir.Click += btnSalir_Click;
@@ -163,35 +163,35 @@
             txtAP.Location = new Point(160, 88);
             txtAP.Name = "txtAP";
             txtAP.Size = new Size(197, 23);
-            txtAP.TabIndex = 13;
+            txtAP.TabIndex = 2;
             // 
             // txtAM
             // 
             txtAM.Location = new Point(160, 124);
             txtAM.Name = "txtAM";
             txtAM.Size = new Size(197, 23);
-            txtAM.TabIndex = 14;
+            txtAM.TabIndex = 3;
             // 
             // txtEmail
             // 
             txtEmail.Location = new Point(160, 233);
             txtEmail.Name = "txtEmail";
             txtEmail.Size = new Size(197, 23);
-            txtEmail.TabIndex = 15;
+            txtEmail.TabIndex = 7;
             // 
             // txtDireccion
             // 
             txtDireccion.Location = new Point(160, 269);
             txtDireccion.Name = "txtDireccion";
             txtDireccion.Size = new Size(197, 23);
-            txtDireccion.TabIndex = 16;
+            txtDireccion.TabIndex = 8;
             // 
             // dtNacimiento
             // 
             dtNacimiento.Location = new Point(160, 310);
             dtNacimiento.Name = "dtNacimiento";
             dtNacimiento.Size = new Size(200, 23);
-            dtNacimiento.TabIndex = 17;
+            dtNacimiento.TabIndex = 9;
             // 
             // rbF
             // 
@@ -199,7 +199,7 @@
             rbF.Location = new Point(261, 167);
             rbF.Name = "rbF";
             rbF.Size = new Size(78, 19);
-            rbF.TabIndex = 18;
+            rbF.TabIndex = 5;
             rbF.TabStop = true;
             rbF.Tag = "Genero";
             rbF.Text = "Femenino";
@@ -211,7 +211,7 @@
             rbM.Location = new Point(160, 167);
             rbM.Name = "rbM";
             rbM.Size = new Size(80, 19);
-            rbM.TabIndex = 19;
+            rbM.TabIndex = 4;
             rbM.TabStop = true;
             rbM.Tag = "gen";
             rbM.Text = "Masculino";
@@ -222,7 +222,7 @@
             txtDNI.Location = new Point(160, 14);
             txtDNI.Name = "txtDNI";
             txtDNI.Size = new Size(197, 23);
-            txtDNI.TabIndex = 21;
+            txtDNI.TabIndex = 0;
             // 
             // label10
             // 
@@ -238,7 +238,7 @@
             btnNuevo.Location = new Point(156, 366);
             btnNuevo.Name = "btnNuevo";
             btnNuevo.Size = new Size(75, 23);
-            btnNuevo.TabIndex = 22;
+            btnNuevo.TabIndex = 11;
             btnNuevo.Text = "Nuevo";
             btnNuevo.UseVisualStyleBackColor = true;
             btnNuevo.Click += btnNuevo_Click;

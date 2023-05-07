@@ -29,6 +29,7 @@ namespace wea
         private void CargarContactos()
         {
             dgvContactos.AutoGenerateColumns = false;
+            dgvContactos.Columns.Add("Id", "Id");
             dgvContactos.Columns.Add("DNI", "DNI");
             dgvContactos.Columns.Add("Nombre", "Nombre");
             dgvContactos.Columns.Add("ApellPaterno", "ApellPaterno");
@@ -38,6 +39,7 @@ namespace wea
             dgvContactos.Columns.Add("Email", "Email");
             dgvContactos.Columns.Add("Direccion", "Direccion");
             dgvContactos.Columns.Add("Nacimiento", "Nacimiento");
+            dgvContactos.Columns["Id"].DataPropertyName = "Id";
             dgvContactos.Columns["DNI"].DataPropertyName = "DNI";
             dgvContactos.Columns["Nombre"].DataPropertyName = "Nombre";
             dgvContactos.Columns["ApellPaterno"].DataPropertyName = "ApellPaterno";
@@ -47,6 +49,7 @@ namespace wea
             dgvContactos.Columns["Email"].DataPropertyName = "Email";
             dgvContactos.Columns["Direccion"].DataPropertyName = "Direccion";
             dgvContactos.Columns["Nacimiento"].DataPropertyName = "Nacimiento";
+            dgvContactos.Columns["Id"].Visible = false;
         }
         private void Salir_Click(object sender, EventArgs e)
         {
@@ -63,10 +66,9 @@ namespace wea
             clear();
             OleDbDataReader reader = conex.RecuperarDatos(f, colum, para);
             // Enlazar los datos al DataGridView
-            MessageBox.Show(reader.ToString(), "");
-            if (reader.Read())
+            while (reader.Read())
             {
-                dgvContactos.Rows.Add(reader["DNI"], reader["Nombre"], reader["ApellidoPaterno"], reader["ApellidoMaterno"], reader["Genero"], reader["Telefono"], reader["Email"], reader["Direccion"], reader["Nacimiento"]);
+                dgvContactos.Rows.Add(reader["Id"], reader["DNI"], reader["Nombre"], reader["ApellidoPaterno"], reader["ApellidoMaterno"], reader["Genero"], reader["Telefono"], reader["Email"], reader["Direccion"], reader["Nacimiento"]);
             }
             conex.close();
             // dgvContactos.DataSource = contactos;

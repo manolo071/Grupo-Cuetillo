@@ -26,6 +26,7 @@ namespace AgendaCuetillo
         private void CargarContactos()
         {
             dgvContactos.AutoGenerateColumns = false;
+            dgvContactos.Columns.Add("Id", "Id");
             dgvContactos.Columns.Add("DNI", "DNI");
             dgvContactos.Columns.Add("Nombre", "Nombre");
             dgvContactos.Columns.Add("ApellPaterno", "ApellPaterno");
@@ -35,6 +36,7 @@ namespace AgendaCuetillo
             dgvContactos.Columns.Add("Email", "Email");
             dgvContactos.Columns.Add("Direccion", "Direccion");
             dgvContactos.Columns.Add("Nacimiento", "Nacimiento");
+            dgvContactos.Columns["Id"].DataPropertyName = "Id";
             dgvContactos.Columns["DNI"].DataPropertyName = "DNI";
             dgvContactos.Columns["Nombre"].DataPropertyName = "Nombre";
             dgvContactos.Columns["ApellPaterno"].DataPropertyName = "ApellPaterno";
@@ -44,21 +46,28 @@ namespace AgendaCuetillo
             dgvContactos.Columns["Email"].DataPropertyName = "Email";
             dgvContactos.Columns["Direccion"].DataPropertyName = "Direccion";
             dgvContactos.Columns["Nacimiento"].DataPropertyName = "Nacimiento";
+            dgvContactos.Columns["Id"].Visible = false;
         }
         private void CargarDatos(int f, string colum, string para)
-        {            
+        {
+            conex.close();
             clear();
             OleDbDataReader reader = conex.RecuperarDatos(f, colum, para);
             // Enlazar los datos al DataGridView
-            if (reader.Read())
+            while (reader.Read())
             {
-                dgvContactos.Rows.Add(reader["DNI"], reader["Nombre"], reader["ApellidoPaterno"], reader["ApellidoMaterno"], reader["Genero"], reader["Telefono"], reader["Email"], reader["Direccion"], reader["Nacimiento"]);
+                dgvContactos.Rows.Add(reader["Id"], reader["DNI"], reader["Nombre"], reader["ApellidoPaterno"], reader["ApellidoMaterno"], reader["Genero"], reader["Telefono"], reader["Email"], reader["Direccion"], reader["Nacimiento"]);
             }
             conex.close();
             // dgvContactos.DataSource = contactos;
         }
+        private void LimpiarId()
+        {
+            txtId.ResetText();
+        }
         private void Limpiar()
         {
+            txtAM.ResetText();
             txtDNI.ResetText();
             txtNombre.ResetText();
             txtAP.ResetText();
@@ -77,6 +86,7 @@ namespace AgendaCuetillo
         {
             try
             {
+                int Id = int.Parse(txtId.Text);
                 int DNI = int.Parse(txtDNI.Text);
                 string Nombre = txtNombre.Text.ToUpper();
                 string ApellPaterno = txtAP.Text.ToUpper();
@@ -97,19 +107,18 @@ namespace AgendaCuetillo
 
                 cContacto nuevoContacto = new cContacto(DNI, Nombre, ApellPaterno, ApellMaterno, Genero, Telefono, Email, Direccion, Nacimiento);
                 clear();
-                //int i = dgvContactos.CurrentRow.Index;
-                int i = 1;
-                conex.ModificarDatos(nuevoContacto,i+3);
+                conex.ModificarDatos(nuevoContacto, Id);
                 MessageBox.Show("Se actualizo correctamente", "Felicidades");
-
                 Limpiar();
+                LimpiarId();
+                CargarDatos(0, "", "");
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.ToString(), "Error");
-                MessageBox.Show("No se pudo agregar correctamente :c", "Error");
+                MessageBox.Show("No se pudo actualizar correctamente :c", "Error");
+                CargarDatos(0, "", "");
             }
-            
+
         }
 
         private void btnNuevo_Click(object sender, EventArgs e)
@@ -126,11 +135,12 @@ namespace AgendaCuetillo
             try
             {
                 Habilitar();
-                txtDNI.Text = (dgvContactos.CurrentRow.Cells[0].Value.ToString());
-                txtNombre.Text = dgvContactos.CurrentRow.Cells[1].Value.ToString();
-                txtAP.Text = dgvContactos.CurrentRow.Cells[2].Value.ToString();
-                txtAM.Text = dgvContactos.CurrentRow.Cells[3].Value.ToString();
-                char Genero = char.Parse(dgvContactos.CurrentRow.Cells[4].Value.ToString());
+                txtId.Text = (dgvContactos.CurrentRow.Cells[0].Value.ToString());
+                txtDNI.Text = (dgvContactos.CurrentRow.Cells[1].Value.ToString());
+                txtNombre.Text = dgvContactos.CurrentRow.Cells[2].Value.ToString();
+                txtAP.Text = dgvContactos.CurrentRow.Cells[3].Value.ToString();
+                txtAM.Text = dgvContactos.CurrentRow.Cells[4].Value.ToString();
+                char Genero = char.Parse(dgvContactos.CurrentRow.Cells[5].Value.ToString());
                 if (Genero == 'M')
                 {
                     rbM.Select();
@@ -139,10 +149,10 @@ namespace AgendaCuetillo
                 {
                     rbF.Select();
                 }
-                txtTelefono.Text = dgvContactos.CurrentRow.Cells[5].Value.ToString();
-                txtEmail.Text = dgvContactos.CurrentRow.Cells[6].Value.ToString();
-                txtDireccion.Text = dgvContactos.CurrentRow.Cells[7].Value.ToString();
-                dtNacimiento.Value = DateTime.Parse(dgvContactos.CurrentRow.Cells[8].Value.ToString());
+                txtTelefono.Text = dgvContactos.CurrentRow.Cells[6].Value.ToString();
+                txtEmail.Text = dgvContactos.CurrentRow.Cells[7].Value.ToString();
+                txtDireccion.Text = dgvContactos.CurrentRow.Cells[8].Value.ToString();
+                dtNacimiento.Value = DateTime.Parse(dgvContactos.CurrentRow.Cells[9].Value.ToString());
             }
             catch (Exception ex)
             {
@@ -186,7 +196,13 @@ namespace AgendaCuetillo
         private void btnCancelar_Click(object sender, EventArgs e)
         {
             Limpiar();
+            LimpiarId();
             Deshabilitar();
+        }
+
+        private void dgvContactos_TabIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -82,14 +82,12 @@ namespace AgendaCuetillo
                 command.Parameters.AddWithValue("@email", contacto.Email);
                 command.Parameters.AddWithValue("@direccion", contacto.Direccion);
                 command.Parameters.AddWithValue("@nacimiento", contacto.Nacimiento);
-
                 command.ExecuteNonQuery();
-                close();
-
             }
             catch (SqlException e)
             {
                 MessageBox.Show("No se logro ingresar contacto a la DB");
+                close();
             }
             
             return conexion;
@@ -99,9 +97,9 @@ namespace AgendaCuetillo
             try
             {
                 conexionBD();
-                string query = "UPDATE TContactos SET (DNI, Nombre, ApellidoPaterno, ApellidoMaterno, Genero, Telefono, Email, Direccion, Nacimiento)";
-                query += " VALUES (@dni, @nombre, @paterno, @materno, @genero, @telefono, @email, @direccion, @nacimiento)";
-                query += " where Id = '" + i + "';";
+                string query = "UPDATE TContactos SET DNI = @dni , Nombre = @nombre, ApellidoPaterno = @paterno, ApellidoMaterno = @materno, ";
+                query += "Genero = @genero, Telefono = @telefono, Email = @email, Direccion = @direccion, Nacimiento = @nacimiento";
+                query += " where ID = " + i + ";";
                 OleDbCommand command = new OleDbCommand(query, conexion);
                 command.Parameters.AddWithValue("@dni", contacto.DNI);
                 command.Parameters.AddWithValue("@nombre", contacto.Nombre);
@@ -114,12 +112,11 @@ namespace AgendaCuetillo
                 command.Parameters.AddWithValue("@nacimiento", contacto.Nacimiento);
 
                 command.ExecuteNonQuery();
-                close();
-
             }
             catch (SqlException e)
             {
                 MessageBox.Show("No se logro actualizar el contacto a la DB");
+                close();
             }
 
             return conexion;
@@ -141,15 +138,14 @@ namespace AgendaCuetillo
                     query += ";";
                 }
                 OleDbCommand command = new OleDbCommand(query, conexion);
-                reader = command.ExecuteReader();                  
+                reader = command.ExecuteReader();
                 return reader;                
             }
             catch (SqlException e)
             {
+                close();
                 return null;
-            }
-            close();
-
+            }            
         }
 
         public OleDbDataReader Login(string User, string Pass)
@@ -164,14 +160,14 @@ namespace AgendaCuetillo
                 OleDbCommand command = new OleDbCommand(query, conexion);
                 reader = command.ExecuteReader();
                 return reader;
+
             }
             catch (SyntaxErrorException e)
             {
                 MessageBox.Show("No se ingreso ningun parametro DB");
+                close();
                 return null;
-
-            }
-            close();
+            }          
 
         }
     }
