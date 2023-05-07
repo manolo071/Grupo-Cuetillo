@@ -16,9 +16,19 @@ namespace wea
         }
 
 
-        private void btnCancelar_Click(object sender, EventArgs e)
+        private void btnSalir_Click(object sender, EventArgs e)
         {
-            this.Dispose();
+            if (verificar())
+            {
+                if (MessageBox.Show("Los datos de su nuevo contacto se perderan, esta seguro que desea salir?", "Advertencia", MessageBoxButtons.YesNo) == DialogResult.Yes)
+                {
+                    Close();
+                }
+            }
+            else
+            {
+                Close();
+            }
         }
 
 
@@ -50,7 +60,7 @@ namespace wea
                 conex.IngresarDatos(nuevoContacto);
                 MessageBox.Show("Se agrego correctamente", "Felicidades");
 
-                this.Dispose();
+                Limpiar();
             }
             catch (Exception ex)
             {
@@ -59,10 +69,43 @@ namespace wea
             }
         }
 
-        private void frmAgreCon_Load(object sender, EventArgs e)
+        private void frmAgregar_FormClosing(object sender, FormClosingEventArgs e)
         {
-
+            if (verificar())
+            {
+                if (MessageBox.Show("Los datos de su nuevo contacto se perderan, esta seguro que desea salir?", "Advertencia", MessageBoxButtons.YesNo) == DialogResult.No)
+                {
+                    e.Cancel = true;
+                }
+            }
         }
 
+        private void btnNuevo_Click(object sender, EventArgs e)
+        {
+            Limpiar();
+        }
+
+        private Boolean verificar()
+        {
+            if (txtDNI.Text != "" || txtNombre.Text != "" || txtAP.Text != "" || txtAM.Text != "" || txtTelefono.Text != "" || txtEmail.Text != "" || txtDireccion.Text != "")
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+        private void Limpiar()
+        {
+            txtDNI.ResetText();
+            txtNombre.ResetText();
+            txtAP.ResetText();
+            txtAM.ResetText();
+            txtTelefono.ResetText();
+            txtEmail.ResetText();
+            txtDireccion.ResetText();
+            txtDNI.Focus();
+        }
     }
 }

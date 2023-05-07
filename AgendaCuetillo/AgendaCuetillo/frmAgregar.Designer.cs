@@ -32,7 +32,7 @@
             txtNombre = new TextBox();
             txtTelefono = new TextBox();
             btnAgregar = new Button();
-            btnCancelar = new Button();
+            btnSalir = new Button();
             label3 = new Label();
             label4 = new Label();
             label5 = new Label();
@@ -49,6 +49,7 @@
             rbM = new RadioButton();
             txtDNI = new TextBox();
             label10 = new Label();
+            btnNuevo = new Button();
             SuspendLayout();
             // 
             // label1
@@ -76,7 +77,7 @@
             // 
             // btnAgregar
             // 
-            btnAgregar.Location = new Point(75, 366);
+            btnAgregar.Location = new Point(65, 366);
             btnAgregar.Name = "btnAgregar";
             btnAgregar.Size = new Size(75, 23);
             btnAgregar.TabIndex = 4;
@@ -84,15 +85,15 @@
             btnAgregar.UseVisualStyleBackColor = true;
             btnAgregar.Click += btnAgregar_Click;
             // 
-            // btnCancelar
+            // btnSalir
             // 
-            btnCancelar.Location = new Point(224, 366);
-            btnCancelar.Name = "btnCancelar";
-            btnCancelar.Size = new Size(75, 23);
-            btnCancelar.TabIndex = 5;
-            btnCancelar.Text = "Cancelar";
-            btnCancelar.UseVisualStyleBackColor = true;
-            btnCancelar.Click += btnCancelar_Click;
+            btnSalir.Location = new Point(247, 366);
+            btnSalir.Name = "btnSalir";
+            btnSalir.Size = new Size(75, 23);
+            btnSalir.TabIndex = 5;
+            btnSalir.Text = "Salir";
+            btnSalir.UseVisualStyleBackColor = true;
+            btnSalir.Click += btnSalir_Click;
             // 
             // label3
             // 
@@ -232,11 +233,22 @@
             label10.TabIndex = 20;
             label10.Text = "DNI:";
             // 
-            // frmAgreCon
+            // btnNuevo
+            // 
+            btnNuevo.Location = new Point(156, 366);
+            btnNuevo.Name = "btnNuevo";
+            btnNuevo.Size = new Size(75, 23);
+            btnNuevo.TabIndex = 22;
+            btnNuevo.Text = "Nuevo";
+            btnNuevo.UseVisualStyleBackColor = true;
+            btnNuevo.Click += btnNuevo_Click;
+            // 
+            // frmAgregar
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(380, 397);
+            Controls.Add(btnNuevo);
             Controls.Add(txtDNI);
             Controls.Add(label10);
             Controls.Add(rbM);
@@ -253,15 +265,15 @@
             Controls.Add(label5);
             Controls.Add(label4);
             Controls.Add(label3);
-            Controls.Add(btnCancelar);
+            Controls.Add(btnSalir);
             Controls.Add(btnAgregar);
             Controls.Add(txtTelefono);
             Controls.Add(txtNombre);
             Controls.Add(label1);
-            Name = "frmAgreCon";
+            Name = "frmAgregar";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Agregar Contacto";
-            Load += frmAgreCon_Load;
+            FormClosing += frmAgregar_FormClosing;
             ResumeLayout(false);
             PerformLayout();
         }
@@ -273,7 +285,7 @@
         private Label label2;
         private TextBox txtTelefono;
         private Button btnAgregar;
-        private Button btnCancelar;
+        private Button btnSalir;
         private Label label3;
         private Label label4;
         private Label label5;
@@ -290,5 +302,6 @@
         private RadioButton rbM;
         private TextBox txtDNI;
         private Label label10;
+        private Button btnNuevo;
     }
 }

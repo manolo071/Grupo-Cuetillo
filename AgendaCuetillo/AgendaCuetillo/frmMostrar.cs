@@ -50,7 +50,7 @@ namespace wea
         }
         private void Salir_Click(object sender, EventArgs e)
         {
-            this.Dispose();
+            this.Close();
         }
         private void clear()
         {

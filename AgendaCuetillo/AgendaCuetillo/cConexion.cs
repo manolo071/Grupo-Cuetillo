@@ -116,9 +116,7 @@ namespace AgendaCuetillo
             }
             catch (SqlException e)
             {
-                MessageBox.Show("No se logro conectyar a la DB");
                 return null;
-
             }
             close();
 
