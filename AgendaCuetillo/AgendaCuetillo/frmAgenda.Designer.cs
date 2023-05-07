@@ -1,6 +1,6 @@
 ﻿namespace wea
 {
-    partial class Form1
+    partial class frmAgenda
     {
         /// <summary>
         ///  Required designer variable.
@@ -28,72 +28,106 @@
         /// </summary>
         private void InitializeComponent()
         {
-            label1 = new Label();
-            btnAgregar = new Button();
-            btnMostrar = new Button();
-            btnSalir = new Button();
+            menuStrip1 = new MenuStrip();
+            operacionesToolStripMenuItem = new ToolStripMenuItem();
+            agregarContactoToolStripMenuItem = new ToolStripMenuItem();
+            mostrarContactoToolStripMenuItem = new ToolStripMenuItem();
+            salirToolStripMenuItem = new ToolStripMenuItem();
+            acercaDeToolStripMenuItem = new ToolStripMenuItem();
+            acercaDeAgendaCuetilloToolStripMenuItem = new ToolStripMenuItem();
+            pictureBox1 = new PictureBox();
+            menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
-            // label1
+            // menuStrip1
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(72, 35);
-            label1.Name = "label1";
-            label1.Size = new Size(134, 15);
-            label1.TabIndex = 0;
-            label1.Text = "Bienvenido a la Agenda:";
+            menuStrip1.Items.AddRange(new ToolStripItem[] { operacionesToolStripMenuItem, acercaDeToolStripMenuItem });
+            menuStrip1.Location = new Point(0, 0);
+            menuStrip1.Name = "menuStrip1";
+            menuStrip1.Size = new Size(300, 24);
+            menuStrip1.TabIndex = 4;
+            menuStrip1.Text = "menuStrip1";
             // 
-            // btnAgregar
+            // operacionesToolStripMenuItem
             // 
-            btnAgregar.Location = new Point(74, 92);
-            btnAgregar.Name = "btnAgregar";
-            btnAgregar.Size = new Size(132, 23);
-            btnAgregar.TabIndex = 1;
-            btnAgregar.Text = "Agregar Contacto";
-            btnAgregar.UseVisualStyleBackColor = true;
-            btnAgregar.Click += btnAgregar_Click;
+            operacionesToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { agregarContactoToolStripMenuItem, mostrarContactoToolStripMenuItem, salirToolStripMenuItem });
+            operacionesToolStripMenuItem.Name = "operacionesToolStripMenuItem";
+            operacionesToolStripMenuItem.Size = new Size(85, 20);
+            operacionesToolStripMenuItem.Text = "Operaciones";
             // 
-            // btnMostrar
+            // agregarContactoToolStripMenuItem
             // 
-            btnMostrar.Location = new Point(72, 145);
-            btnMostrar.Name = "btnMostrar";
-            btnMostrar.Size = new Size(132, 23);
-            btnMostrar.TabIndex = 2;
-            btnMostrar.Text = "Mostrar Contacto";
-            btnMostrar.UseVisualStyleBackColor = true;
-            btnMostrar.Click += btnMostrar_Click;
+            agregarContactoToolStripMenuItem.Name = "agregarContactoToolStripMenuItem";
+            agregarContactoToolStripMenuItem.Size = new Size(168, 22);
+            agregarContactoToolStripMenuItem.Text = "Agregar Contacto";
+            agregarContactoToolStripMenuItem.Click += agregarContactoToolStripMenuItem_Click;
             // 
-            // btnSalir
+            // mostrarContactoToolStripMenuItem
             // 
-            btnSalir.Location = new Point(72, 200);
-            btnSalir.Name = "btnSalir";
-            btnSalir.Size = new Size(132, 23);
-            btnSalir.TabIndex = 3;
-            btnSalir.Text = "Salir";
-            btnSalir.UseVisualStyleBackColor = true;
-            btnSalir.Click += btnSalir_Click;
+            mostrarContactoToolStripMenuItem.Name = "mostrarContactoToolStripMenuItem";
+            mostrarContactoToolStripMenuItem.Size = new Size(168, 22);
+            mostrarContactoToolStripMenuItem.Text = "Mostrar Contacto";
+            mostrarContactoToolStripMenuItem.Click += mostrarContactoToolStripMenuItem_Click;
+            // 
+            // salirToolStripMenuItem
+            // 
+            salirToolStripMenuItem.Name = "salirToolStripMenuItem";
+            salirToolStripMenuItem.Size = new Size(168, 22);
+            salirToolStripMenuItem.Text = "Salir";
+            salirToolStripMenuItem.Click += salirToolStripMenuItem_Click;
+            // 
+            // acercaDeToolStripMenuItem
+            // 
+            acercaDeToolStripMenuItem.Alignment = ToolStripItemAlignment.Right;
+            acercaDeToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { acercaDeAgendaCuetilloToolStripMenuItem });
+            acercaDeToolStripMenuItem.Name = "acercaDeToolStripMenuItem";
+            acercaDeToolStripMenuItem.Size = new Size(53, 20);
+            acercaDeToolStripMenuItem.Text = "Ayuda";
+            // 
+            // acercaDeAgendaCuetilloToolStripMenuItem
+            // 
+            acercaDeAgendaCuetilloToolStripMenuItem.Name = "acercaDeAgendaCuetilloToolStripMenuItem";
+            acercaDeAgendaCuetilloToolStripMenuItem.Size = new Size(214, 22);
+            acercaDeAgendaCuetilloToolStripMenuItem.Text = "Acerca de Agenda Cuetillo";
+            acercaDeAgendaCuetilloToolStripMenuItem.Click += acercaDeAgendaCuetilloToolStripMenuItem_Click;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = AgendaCuetillo.Properties.Resources._1802667;
+            pictureBox1.Location = new Point(12, 27);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(276, 264);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 5;
+            pictureBox1.TabStop = false;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(285, 266);
-            Controls.Add(btnSalir);
-            Controls.Add(btnMostrar);
-            Controls.Add(btnAgregar);
-            Controls.Add(label1);
+            ClientSize = new Size(300, 303);
+            Controls.Add(pictureBox1);
+            Controls.Add(menuStrip1);
+            MainMenuStrip = menuStrip1;
             Name = "Form1";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "frmAgenda";
+            Text = "Agenda Cuetillo 1.0";
+            menuStrip1.ResumeLayout(false);
+            menuStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
-
-        private Label label1;
-        private Button btnAgregar;
-        private Button btnMostrar;
-        private Button btnSalir;
+        private MenuStrip menuStrip1;
+        private ToolStripMenuItem operacionesToolStripMenuItem;
+        private ToolStripMenuItem agregarContactoToolStripMenuItem;
+        private ToolStripMenuItem mostrarContactoToolStripMenuItem;
+        private ToolStripMenuItem salirToolStripMenuItem;
+        private ToolStripMenuItem acercaDeToolStripMenuItem;
+        private ToolStripMenuItem acercaDeAgendaCuetilloToolStripMenuItem;
+        private PictureBox pictureBox1;
     }
 }

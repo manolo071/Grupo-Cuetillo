@@ -116,7 +116,30 @@ namespace AgendaCuetillo
             }
             catch (SqlException e)
             {
-                MessageBox.Show("No se logro ingresar contacto a la DB");
+                MessageBox.Show("No se logro conectyar a la DB");
+                return null;
+
+            }
+            close();
+
+        }
+
+        public OleDbDataReader Login(string User, string Pass)
+        {            
+            try
+            {
+                OleDbDataReader reader;
+                conexionBD();
+                string query = "SELECT * FROM TUsuarios";
+                query += " WHERE  User = '" + User;
+                query += "' AND Password = '" + Pass + "';";
+                OleDbCommand command = new OleDbCommand(query, conexion);
+                reader = command.ExecuteReader();
+                return reader;
+            }
+            catch (SyntaxErrorException e)
+            {
+                MessageBox.Show("No se ingreso ningun parametro DB");
                 return null;
 
             }
