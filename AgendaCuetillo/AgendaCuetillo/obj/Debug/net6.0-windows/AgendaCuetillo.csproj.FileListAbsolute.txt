@@ -91,3 +91,4 @@ C:\Users\Andre\Desktop\Agenda\AgendaCuetillo\AgendaCuetillo\obj\Debug\net6.0-win
 C:\Users\Andre\Desktop\Agenda\AgendaCuetillo\AgendaCuetillo\obj\Debug\net6.0-windows\AgendaCuetillo.pdb
 C:\Users\Andre\Desktop\Agenda\AgendaCuetillo\AgendaCuetillo\obj\Debug\net6.0-windows\AgendaCuetillo.genruntimeconfig.cache
 C:\Users\Andre\Desktop\Agenda\AgendaCuetillo\AgendaCuetillo\obj\Debug\net6.0-windows\ref\AgendaCuetillo.dll
+C:\Users\Andre\Desktop\Agenda\AgendaCuetillo\AgendaCuetillo\obj\Debug\net6.0-windows\AgendaCuetillo.frmEditar.resources

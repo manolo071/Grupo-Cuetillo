@@ -63,6 +63,7 @@ namespace wea
             clear();
             OleDbDataReader reader = conex.RecuperarDatos(f, colum, para);
             // Enlazar los datos al DataGridView
+            MessageBox.Show(reader.ToString(), "");
             if (reader.Read())
             {
                 dgvContactos.Rows.Add(reader["DNI"], reader["Nombre"], reader["ApellidoPaterno"], reader["ApellidoMaterno"], reader["Genero"], reader["Telefono"], reader["Email"], reader["Direccion"], reader["Nacimiento"]);

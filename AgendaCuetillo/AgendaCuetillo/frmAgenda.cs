@@ -27,7 +27,7 @@ namespace wea
 
         private void acercaDeAgendaCuetilloToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("AGENDA CUETILLO\n\nAgenda Cuetillo version 1.0 64 bits\n\nCuetilloDevs:\n\n\t*Jimy Moises Mamani Diaz\n\t*Juan Manuel Huayta Mayta\n\t*Roy Ademir Farfan Ordoñez\n\t*Andre Josias Sequeiros Carcagno", "Acerca de Agenda Cuetillo");
+            MessageBox.Show("AGENDA CUETILLO\n\nAgenda Cuetillo version 1.0 64 bits\n\nCuetilloDevs:\n\n\t*Jimy Moises Mamani Diaz\n\t*Juan Manuel Huayta Mayta\n\t*Roy Ademir Farfan Ordoñez\n\t*Andre Josias Sequeiros Carcagno\n\t*Luis Kevin Ccopa Fernandez", "Acerca de Agenda Cuetillo");
         }
 
         private void salirToolStripMenuItem_Click(object sender, EventArgs e)
@@ -43,6 +43,12 @@ namespace wea
         private void cerrar()
         {
             Environment.Exit(1);
+        }
+
+        private void editarContactoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmEditar Editar = new frmEditar();
+            Editar.Show();
         }
     }
 }

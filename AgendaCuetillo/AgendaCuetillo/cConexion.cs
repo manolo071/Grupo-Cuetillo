@@ -94,6 +94,36 @@ namespace AgendaCuetillo
             
             return conexion;
         }
+        public OleDbConnection ModificarDatos(cContacto contacto, int i)
+        {
+            try
+            {
+                conexionBD();
+                string query = "UPDATE TContactos SET (DNI, Nombre, ApellidoPaterno, ApellidoMaterno, Genero, Telefono, Email, Direccion, Nacimiento)";
+                query += " VALUES (@dni, @nombre, @paterno, @materno, @genero, @telefono, @email, @direccion, @nacimiento)";
+                query += " where Id = '" + i + "';";
+                OleDbCommand command = new OleDbCommand(query, conexion);
+                command.Parameters.AddWithValue("@dni", contacto.DNI);
+                command.Parameters.AddWithValue("@nombre", contacto.Nombre);
+                command.Parameters.AddWithValue("@paterno", contacto.ApellPaterno);
+                command.Parameters.AddWithValue("@materno", contacto.ApellMaterno);
+                command.Parameters.AddWithValue("@genero", contacto.Genero);
+                command.Parameters.AddWithValue("@telefono", contacto.Telefono);
+                command.Parameters.AddWithValue("@email", contacto.Email);
+                command.Parameters.AddWithValue("@direccion", contacto.Direccion);
+                command.Parameters.AddWithValue("@nacimiento", contacto.Nacimiento);
+
+                command.ExecuteNonQuery();
+                close();
+
+            }
+            catch (SqlException e)
+            {
+                MessageBox.Show("No se logro actualizar el contacto a la DB");
+            }
+
+            return conexion;
+        }
 
         public OleDbDataReader RecuperarDatos(int f, string Colum, string para)
         {

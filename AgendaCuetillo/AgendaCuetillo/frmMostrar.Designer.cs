@@ -58,10 +58,13 @@
             // 
             // dgvContactos
             // 
+            dgvContactos.AllowUserToAddRows = false;
             dgvContactos.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvContactos.Location = new Point(12, 69);
             dgvContactos.Name = "dgvContactos";
+            dgvContactos.ReadOnly = true;
             dgvContactos.RowTemplate.Height = 25;
+            dgvContactos.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dgvContactos.Size = new Size(938, 205);
             dgvContactos.TabIndex = 3;
             // 

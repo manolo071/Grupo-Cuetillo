@@ -106,6 +106,6 @@ namespace wea
             txtEmail.ResetText();
             txtDireccion.ResetText();
             txtDNI.Focus();
-        }
+        }        
     }
 }

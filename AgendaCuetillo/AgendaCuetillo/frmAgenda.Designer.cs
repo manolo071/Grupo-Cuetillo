@@ -37,6 +37,7 @@
             acercaDeAgendaCuetilloToolStripMenuItem = new ToolStripMenuItem();
             pictureBox1 = new PictureBox();
             lblBienvenida = new Label();
+            editarContactoToolStripMenuItem = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
@@ -52,7 +53,7 @@
             // 
             // operacionesToolStripMenuItem
             // 
-            operacionesToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { agregarContactoToolStripMenuItem, mostrarContactoToolStripMenuItem, salirToolStripMenuItem });
+            operacionesToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { agregarContactoToolStripMenuItem, editarContactoToolStripMenuItem, mostrarContactoToolStripMenuItem, salirToolStripMenuItem });
             operacionesToolStripMenuItem.Name = "operacionesToolStripMenuItem";
             operacionesToolStripMenuItem.Size = new Size(85, 20);
             operacionesToolStripMenuItem.Text = "Operaciones";
@@ -60,21 +61,21 @@
             // agregarContactoToolStripMenuItem
             // 
             agregarContactoToolStripMenuItem.Name = "agregarContactoToolStripMenuItem";
-            agregarContactoToolStripMenuItem.Size = new Size(168, 22);
+            agregarContactoToolStripMenuItem.Size = new Size(180, 22);
             agregarContactoToolStripMenuItem.Text = "Agregar Contacto";
             agregarContactoToolStripMenuItem.Click += agregarContactoToolStripMenuItem_Click;
             // 
             // mostrarContactoToolStripMenuItem
             // 
             mostrarContactoToolStripMenuItem.Name = "mostrarContactoToolStripMenuItem";
-            mostrarContactoToolStripMenuItem.Size = new Size(168, 22);
+            mostrarContactoToolStripMenuItem.Size = new Size(180, 22);
             mostrarContactoToolStripMenuItem.Text = "Mostrar Contacto";
             mostrarContactoToolStripMenuItem.Click += mostrarContactoToolStripMenuItem_Click;
             // 
             // salirToolStripMenuItem
             // 
             salirToolStripMenuItem.Name = "salirToolStripMenuItem";
-            salirToolStripMenuItem.Size = new Size(168, 22);
+            salirToolStripMenuItem.Size = new Size(180, 22);
             salirToolStripMenuItem.Text = "Salir";
             salirToolStripMenuItem.Click += salirToolStripMenuItem_Click;
             // 
@@ -112,6 +113,13 @@
             lblBienvenida.TabIndex = 6;
             lblBienvenida.Text = "Bienvenido";
             // 
+            // editarContactoToolStripMenuItem
+            // 
+            editarContactoToolStripMenuItem.Name = "editarContactoToolStripMenuItem";
+            editarContactoToolStripMenuItem.Size = new Size(180, 22);
+            editarContactoToolStripMenuItem.Text = "Editar Contacto";
+            editarContactoToolStripMenuItem.Click += editarContactoToolStripMenuItem_Click;
+            // 
             // frmAgenda
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -142,5 +150,6 @@
         private ToolStripMenuItem acercaDeAgendaCuetilloToolStripMenuItem;
         private PictureBox pictureBox1;
         private Label lblBienvenida;
+        private ToolStripMenuItem editarContactoToolStripMenuItem;
     }
 }
