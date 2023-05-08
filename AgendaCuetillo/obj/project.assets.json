@@ -692,24 +692,31 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Andre\\.nuget\\packages\\": {}
+    "C:\\Users\\Jimy Moises\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Andre\\Desktop\\Agenda\\AgendaCuetillo\\AgendaCuetillo.csproj",
+      "projectUniqueName": "C:\\Users\\Jimy Moises\\Grupo-Cuetillo\\AgendaCuetillo\\AgendaCuetillo.csproj",
       "projectName": "AgendaCuetillo",
-      "projectPath": "C:\\Users\\Andre\\Desktop\\Agenda\\AgendaCuetillo\\AgendaCuetillo.csproj",
-      "packagesPath": "C:\\Users\\Andre\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Andre\\Desktop\\Agenda\\AgendaCuetillo\\obj\\",
+      "projectPath": "C:\\Users\\Jimy Moises\\Grupo-Cuetillo\\AgendaCuetillo\\AgendaCuetillo.csproj",
+      "packagesPath": "C:\\Users\\Jimy Moises\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Jimy Moises\\Grupo-Cuetillo\\AgendaCuetillo\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\Andre\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Jimy Moises\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net6.0-windows"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -756,7 +763,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "c:\\program files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -127,3 +127,38 @@ C:\Users\Andre\Desktop\Agenda\AgendaCuetillo\obj\Debug\net6.0-windows\refint\Age
 C:\Users\Andre\Desktop\Agenda\AgendaCuetillo\obj\Debug\net6.0-windows\AgendaCuetillo.pdb
 C:\Users\Andre\Desktop\Agenda\AgendaCuetillo\obj\Debug\net6.0-windows\AgendaCuetillo.genruntimeconfig.cache
 C:\Users\Andre\Desktop\Agenda\AgendaCuetillo\obj\Debug\net6.0-windows\ref\AgendaCuetillo.dll
+C:\Users\Jimy Moises\Grupo-Cuetillo\AgendaCuetillo\bin\Debug\net6.0-windows\AgendaCuetillo.exe
+C:\Users\Jimy Moises\Grupo-Cuetillo\AgendaCuetillo\bin\Debug\net6.0-windows\AgendaCuetillo.deps.json
+C:\Users\Jimy Moises\Grupo-Cuetillo\AgendaCuetillo\bin\Debug\net6.0-windows\AgendaCuetillo.runtimeconfig.json
+C:\Users\Jimy Moises\Grupo-Cuetillo\AgendaCuetillo\bin\Debug\net6.0-windows\AgendaCuetillo.dll
+C:\Users\Jimy Moises\Grupo-Cuetillo\AgendaCuetillo\bin\Debug\net6.0-windows\AgendaCuetillo.pdb
+C:\Users\Jimy Moises\Grupo-Cuetillo\AgendaCuetillo\bin\Debug\net6.0-windows\System.Configuration.ConfigurationManager.dll
+C:\Users\Jimy Moises\Grupo-Cuetillo\AgendaCuetillo\bin\Debug\net6.0-windows\System.Data.OleDb.dll
+C:\Users\Jimy Moises\Grupo-Cuetillo\AgendaCuetillo\bin\Debug\net6.0-windows\System.Data.SqlClient.dll
+C:\Users\Jimy Moises\Grupo-Cuetillo\AgendaCuetillo\bin\Debug\net6.0-windows\System.Diagnostics.PerformanceCounter.dll
+C:\Users\Jimy Moises\Grupo-Cuetillo\AgendaCuetillo\bin\Debug\net6.0-windows\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Jimy Moises\Grupo-Cuetillo\AgendaCuetillo\bin\Debug\net6.0-windows\runtimes\win-arm64\native\sni.dll
+C:\Users\Jimy Moises\Grupo-Cuetillo\AgendaCuetillo\bin\Debug\net6.0-windows\runtimes\win-x64\native\sni.dll
+C:\Users\Jimy Moises\Grupo-Cuetillo\AgendaCuetillo\bin\Debug\net6.0-windows\runtimes\win-x86\native\sni.dll
+C:\Users\Jimy Moises\Grupo-Cuetillo\AgendaCuetillo\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\System.Data.OleDb.dll
+C:\Users\Jimy Moises\Grupo-Cuetillo\AgendaCuetillo\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Jimy Moises\Grupo-Cuetillo\AgendaCuetillo\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Jimy Moises\Grupo-Cuetillo\AgendaCuetillo\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\System.Diagnostics.PerformanceCounter.dll
+C:\Users\Jimy Moises\Grupo-Cuetillo\AgendaCuetillo\obj\Debug\net6.0-windows\AgendaCuetillo.csproj.AssemblyReference.cache
+C:\Users\Jimy Moises\Grupo-Cuetillo\AgendaCuetillo\obj\Debug\net6.0-windows\wea.frmAgenda.resources
+C:\Users\Jimy Moises\Grupo-Cuetillo\AgendaCuetillo\obj\Debug\net6.0-windows\wea.frmAgregar.resources
+C:\Users\Jimy Moises\Grupo-Cuetillo\AgendaCuetillo\obj\Debug\net6.0-windows\AgendaCuetillo.frmEditar.resources
+C:\Users\Jimy Moises\Grupo-Cuetillo\AgendaCuetillo\obj\Debug\net6.0-windows\AgendaCuetillo.frmLogin.resources
+C:\Users\Jimy Moises\Grupo-Cuetillo\AgendaCuetillo\obj\Debug\net6.0-windows\wea.frmMostrar.resources
+C:\Users\Jimy Moises\Grupo-Cuetillo\AgendaCuetillo\obj\Debug\net6.0-windows\AgendaCuetillo.Properties.Resources.resources
+C:\Users\Jimy Moises\Grupo-Cuetillo\AgendaCuetillo\obj\Debug\net6.0-windows\AgendaCuetillo.csproj.GenerateResource.cache
+C:\Users\Jimy Moises\Grupo-Cuetillo\AgendaCuetillo\obj\Debug\net6.0-windows\AgendaCuetillo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Jimy Moises\Grupo-Cuetillo\AgendaCuetillo\obj\Debug\net6.0-windows\AgendaCuetillo.AssemblyInfoInputs.cache
+C:\Users\Jimy Moises\Grupo-Cuetillo\AgendaCuetillo\obj\Debug\net6.0-windows\AgendaCuetillo.AssemblyInfo.cs
+C:\Users\Jimy Moises\Grupo-Cuetillo\AgendaCuetillo\obj\Debug\net6.0-windows\AgendaCuetillo.csproj.CoreCompileInputs.cache
+C:\Users\Jimy Moises\Grupo-Cuetillo\AgendaCuetillo\obj\Debug\net6.0-windows\AgendaCuetillo.csproj.CopyComplete
+C:\Users\Jimy Moises\Grupo-Cuetillo\AgendaCuetillo\obj\Debug\net6.0-windows\AgendaCuetillo.dll
+C:\Users\Jimy Moises\Grupo-Cuetillo\AgendaCuetillo\obj\Debug\net6.0-windows\refint\AgendaCuetillo.dll
+C:\Users\Jimy Moises\Grupo-Cuetillo\AgendaCuetillo\obj\Debug\net6.0-windows\AgendaCuetillo.pdb
+C:\Users\Jimy Moises\Grupo-Cuetillo\AgendaCuetillo\obj\Debug\net6.0-windows\AgendaCuetillo.genruntimeconfig.cache
+C:\Users\Jimy Moises\Grupo-Cuetillo\AgendaCuetillo\obj\Debug\net6.0-windows\ref\AgendaCuetillo.dll
