@@ -67,6 +67,7 @@
             txtNombre.Name = "txtNombre";
             txtNombre.Size = new Size(197, 23);
             txtNombre.TabIndex = 1;
+            txtNombre.KeyPress += txtNombre_KeyPress;
             // 
             // txtTelefono
             // 
@@ -165,6 +166,7 @@
             txtAP.Name = "txtAP";
             txtAP.Size = new Size(197, 23);
             txtAP.TabIndex = 2;
+            txtAP.KeyPress += txtAP_KeyPress;
             // 
             // txtAM
             // 
@@ -172,6 +174,7 @@
             txtAM.Name = "txtAM";
             txtAM.Size = new Size(197, 23);
             txtAM.TabIndex = 3;
+            txtAM.KeyPress += txtAM_KeyPress;
             // 
             // txtEmail
             // 

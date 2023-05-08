@@ -162,6 +162,11 @@ namespace wea
             {
                 e.Handled = true;
             }
+            if (!(char.IsLetter(e.KeyChar)) && (e.KeyChar != (char)Keys.Back) && (filtro == 1 || filtro == 2 || filtro == 3))
+            {
+                e.Handled = true;
+                return;
+            }
         }
     }
 }

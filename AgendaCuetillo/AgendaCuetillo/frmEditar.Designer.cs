@@ -143,6 +143,7 @@
             txtAM.Name = "txtAM";
             txtAM.Size = new Size(197, 23);
             txtAM.TabIndex = 36;
+            txtAM.KeyPress += txtAM_KeyPress;
             // 
             // txtAP
             // 
@@ -151,6 +152,7 @@
             txtAP.Name = "txtAP";
             txtAP.Size = new Size(197, 23);
             txtAP.TabIndex = 35;
+            txtAP.KeyPress += txtAP_KeyPress;
             // 
             // label9
             // 
@@ -252,6 +254,7 @@
             txtNombre.Name = "txtNombre";
             txtNombre.Size = new Size(197, 23);
             txtNombre.TabIndex = 24;
+            txtNombre.KeyPress += txtNombre_KeyPress;
             // 
             // label1
             // 
