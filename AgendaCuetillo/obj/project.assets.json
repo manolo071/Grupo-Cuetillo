@@ -697,11 +697,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Andre\\Desktop\\Agenda\\AgendaCuetillo\\AgendaCuetillo\\AgendaCuetillo.csproj",
+      "projectUniqueName": "C:\\Users\\Andre\\Desktop\\Agenda\\AgendaCuetillo\\AgendaCuetillo.csproj",
       "projectName": "AgendaCuetillo",
-      "projectPath": "C:\\Users\\Andre\\Desktop\\Agenda\\AgendaCuetillo\\AgendaCuetillo\\AgendaCuetillo.csproj",
+      "projectPath": "C:\\Users\\Andre\\Desktop\\Agenda\\AgendaCuetillo\\AgendaCuetillo.csproj",
       "packagesPath": "C:\\Users\\Andre\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Andre\\Desktop\\Agenda\\AgendaCuetillo\\AgendaCuetillo\\obj\\",
+      "outputPath": "C:\\Users\\Andre\\Desktop\\Agenda\\AgendaCuetillo\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Andre\\AppData\\Roaming\\NuGet\\NuGet.Config"

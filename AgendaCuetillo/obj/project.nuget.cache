@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "GzSIgrLX8G1LiOHzUdC1PaEy8BrpYvsPoG9xQTmIEHDXXE7bijFNZvGRfaEaOGmVk9UNUaOckIaV3NPG6R5emQ==",
+  "dgSpecHash": "9qZiOxQ55Ce9xIuW0QaAvoIAre4MOPnK4XZms7umZFuQVOTQk6fI+vby0dSTDexLJoRqP0qCsVnS51dZ7WDP2g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Andre\\Desktop\\Agenda\\AgendaCuetillo\\AgendaCuetillo\\AgendaCuetillo.csproj",
+  "projectFilePath": "C:\\Users\\Andre\\Desktop\\Agenda\\AgendaCuetillo\\AgendaCuetillo.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Andre\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\Andre\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
